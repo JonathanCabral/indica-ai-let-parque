@@ -1,5 +1,10 @@
 # 🏘️ Indica Aí – Let Parque
 
+![GitHub repo size](https://img.shields.io/github/repo-size/seu-usuario/indica-ai-let-parque)
+![GitHub last commit](https://img.shields.io/github/last-commit/seu-usuario/indica-ai-let-parque)
+![GitHub license](https://img.shields.io/github/license/seu-usuario/indica-ai-let-parque)
+![Issues](https://img.shields.io/github/issues/seu-usuario/indica-ai-let-parque)
+
 **Indica Aí – Let Parque** é uma plataforma colaborativa desenvolvida por Jonathan (o cara brabo) com apoio de amigos para os moradores do condomínio Let Parque.  
 O objetivo é facilitar a recomendação e busca por prestadores de serviço de confiança entre vizinhos.
 
@@ -102,5 +107,6 @@ Este projeto é aberto a sugestões! Se você é dev ou morador curioso e quer a
 
 Para dúvidas, ideias ou sugestões:
 - Abra uma [issue aqui no GitHub](https://github.com/seu-usuario/indica-ai-let-parque/issues)
+- Ou fale com o idealizador por e-mail: dev.jonathancabral@gmail.com
 
 ---
