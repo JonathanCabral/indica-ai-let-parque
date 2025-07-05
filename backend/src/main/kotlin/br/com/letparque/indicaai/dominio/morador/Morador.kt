@@ -38,7 +38,7 @@ class Morador(
     @Column(unique = true)
     var apartamento: Long,
 
-    var tipo: TipoMoradorEnum,
+    var tipo: String, //TODO MUDAR PARA ENUM TipoMoradorEnum
 
     //TODO pensar em como colocar mais de um morador no mesmo apartamento
     //ex: no apartamento 905, mora o Jonathan e a Stefania.

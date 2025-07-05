@@ -1,11 +1,19 @@
 package br.com.letparque.indicaai.dominio.indicacao
 
+import jakarta.persistence.*
 import java.math.BigDecimal
 import java.time.LocalDate
 
+//@Entity
+//@Table(name = "morador")
 class Indicacao (
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long?,
-    var profissional: Profissional,
+
+
+    var profissional: Long,
     var categoria: Categoria,
     var idMorador: Long,
     //Aqui o morador deve fazer uma descrição do trabalho que foi feito, se ela gostou, pontos positivos, pontos negativos
@@ -32,4 +40,3 @@ class Indicacao (
     // limitar a tipos de arquivos ex: png, jpg, pdf. Maximo 5mb
     var anexos: List<String> = mutableListOf()
 }
-

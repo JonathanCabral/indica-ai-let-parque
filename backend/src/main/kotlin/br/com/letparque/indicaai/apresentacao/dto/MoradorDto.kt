@@ -1,28 +1,27 @@
 package br.com.letparque.indicaai.apresentacao.dto
 
 import br.com.letparque.indicaai.dominio.morador.Morador
-import br.com.letparque.indicaai.dominio.morador.TipoMoradorEnum
 import jakarta.validation.constraints.*
 
 class MoradorDto(
     var id: Long?,
     var email: String,
-    @NotBlank
-    @Size(min = 5, max = 50)
+    @field:NotBlank
+    @field:Size(min = 5, max = 50)
     var nome: String,
 
-    @Email
-    @NotEmpty
-    @NotBlank
-    @Size(min = 10, max = 50)
+    @field:Email
+    @field:NotEmpty
+    @field:NotBlank
+    @field:Size(min = 10, max = 50)
     var telefone: String? = null,
 
-    @NotNull
-    @Positive
+    @field:NotNull
+    @field:Positive
     var apartamento: Long,
 
-    @NotBlank
-    @NotNull
+    @field:NotBlank
+    @field:NotNull
     var tipo: String,
 ) {
 
@@ -34,7 +33,7 @@ class MoradorDto(
                 email = morador.email,
                 telefone = morador.telefone,
                 apartamento = morador.apartamento,
-                tipo = morador.tipo.name
+                tipo = morador.tipo
             );
         }
 
@@ -50,7 +49,7 @@ class MoradorDto(
             email = this.email,
             telefone = this.telefone,
             apartamento = this.apartamento,
-            tipo = TipoMoradorEnum.valueOf(this.tipo)
+            tipo = this.tipo
         );
     }
 }
