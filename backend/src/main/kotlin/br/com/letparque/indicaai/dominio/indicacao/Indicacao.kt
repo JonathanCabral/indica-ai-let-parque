@@ -14,7 +14,7 @@ class Indicacao (
     //Esse campo pode ser no estilo de estrelas, então a nota pode ser de 1 a 5 (1 não indicaria, 5 indicaria muito)
     var notaDoMorador: Int,
     var indico: Int, //0 -> Não indico; 1 -> indico;
-    // Deixar
+
     var valorAproximado: BigDecimal? = null, //valor aproximado pago pelo morador, mas não obrigatório.
 
     var dataServico: LocalDate, //data que o serviço foi realizado
