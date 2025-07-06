@@ -3,6 +3,7 @@ package br.com.letparque.indicaai.apresentacao.dto
 import br.com.letparque.indicaai.dominio.indicacao.Categoria
 import jakarta.validation.constraints.NotBlank
 import jakarta.validation.constraints.NotEmpty
+import jakarta.validation.constraints.PositiveOrZero
 import jakarta.validation.constraints.Size
 
 data class CategoriaDto(
@@ -17,8 +18,14 @@ data class CategoriaDto(
     @field:Size(max = 100, min = 10, message = "A descrição deve ter entre 10 e 50 caracteres")
     val descricao: String? = null,
 
+    @field:PositiveOrZero(message = "Habilitada deve ser 0 (desabilitada) ou 1 (habilitada)")
     val habilitada: Int
 ) {
+
+    init {
+        require(habilitada in 0..1) { "Habilitada deve ser 0 (desabilitada) ou 1 (habilitada)" }
+    }
+
     companion object {
         fun fromCategoria(categoria: Categoria): CategoriaDto {
             return CategoriaDto(

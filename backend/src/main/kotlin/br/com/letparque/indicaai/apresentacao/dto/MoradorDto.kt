@@ -5,7 +5,7 @@ import jakarta.validation.constraints.*
 
 class MoradorDto(
     var id: Long?,
-    var email: String,
+
     @field:NotBlank
     @field:Size(min = 5, max = 50)
     var nome: String,
@@ -13,11 +13,15 @@ class MoradorDto(
     @field:Email
     @field:NotEmpty
     @field:NotBlank
+    var email: String,
+
+    @field:NotEmpty
+    @field:NotBlank
     @field:Size(min = 10, max = 50)
     var telefone: String? = null,
 
     @field:NotNull
-    @field:Positive
+    @field:Positive(message = "O apartamento deve ser um número positivo")
     var apartamento: Long,
 
     @field:NotBlank
