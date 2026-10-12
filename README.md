@@ -1,4 +1,6 @@
-# Indica Aí — Le Parque
+# Indica Aí — Let Parque
+
+![img.png](public/logo.png)
 
 ![Status](https://img.shields.io/badge/status-em_desenvolvimento-yellow)
 ![Kotlin](https://img.shields.io/badge/backend-Kotlin-7F52FF)
