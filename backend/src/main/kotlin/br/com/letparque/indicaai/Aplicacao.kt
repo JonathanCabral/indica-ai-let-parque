@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class IndicaAiLetParqueApplication
 
 fun main(args: Array<String>) {
-	runApplication<IndicaAiLetParqueApplication>(*args)
+    runApplication<IndicaAiLetParqueApplication>(*args)
 }
